@@ -1,0 +1,119 @@
+/* Link do Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Configurações Gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    cursor: default;
+}
+
+/* Configuração do Body e do HTML */
+body, html {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+}
+
+/* Variáveis do Site */
+:root {
+    --main-color: #1d4ed8;
+    --white-color: #fff;
+    --transition-effect: all 0.3s ease;
+}
+
+/* Configurações dos Elementos Container */
+.container {
+    background: var(--white-color);
+    padding: 2rem;
+    max-width: 450px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #eee;
+}
+
+.container header p {
+    font-size: 20px;
+}
+
+.container header .socials i {
+    font-size: 24px;
+    transition: var(--transition-effect);
+    cursor: pointer;
+}
+
+.container header .socials i:hover {
+    color: var(--main-color);
+}
+
+/* Configurações do Conteúdo escrito do Container */
+.data p {
+    color: #a1a1a1;
+    margin-top: -5px;
+}
+
+.data img {
+    border-radius: 50%;
+    margin: 20px 0px 10px 0px;
+}
+
+.data h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Configurações dos Botões */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+footer #btn {
+    border: 2px solid transparent;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer #btn:hover {
+    background-color: #1d4ed8;
+    color: var(--white-color);
+}
+
+/* Responsividade */
+
+@media (width < 500px) {
+    .container {
+        width: 90%;
+    }
+
+    footer #btn {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+
+
+
+
+

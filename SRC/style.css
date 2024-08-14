@@ -49,6 +49,28 @@ img {
   margin-top: 20px;
 }
 
+@keyframes color {
+  0% {
+    fill: red;
+  }
+
+  25% {
+    fill: green;
+  }
+
+  50% {
+    fill: blue;
+  }
+
+  75% {
+    fill: yellow;
+  }
+
+  100% {
+    fill: red;
+  }
+}
+
 .hero span:nth-child(3) {
   font-size: 1.3rem;
   font-weight: 500;
@@ -56,6 +78,12 @@ img {
   display: flex;
   align-items: center;
   gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.svg_color {
+  animation: color 4s forwards 0s infinite;
 }
 
 .links {
